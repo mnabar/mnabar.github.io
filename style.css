@@ -1,0 +1,55 @@
+body{
+	font-family: "Helvetica", sans-serif;
+}
+
+
+.HeaderImage h1{
+	color: white;
+	font-size: 40px;
+}
+
+h3 {
+	font-size: 30px;
+	text-align: center;
+}
+
+.HeaderImage{
+	width: 100%;
+	height: 750px;
+	background-color: black;
+	color: white;
+	text-align: center;
+	line-height: 900px;
+	background-image: url("waasheader.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+
+.WhatWeDo p{
+	font-size: 24px;
+	line-height: 48px;
+}
+
+.WhatWeDo{
+	text-align: center;
+	/*height: 500px;*/
+	padding: 15px 40px;
+}
+
+.Performances p{
+	text-align: center;
+}
+
+.Performances{
+	height: 500px;
+}
+.WhoWeAre p{
+	text-align: center;
+}
+
+.WhoWeAre{
+	height: 500px;
+}
