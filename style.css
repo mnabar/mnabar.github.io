@@ -1,6 +1,6 @@
-body{
+/*body{
 	font-family: "Helvetica", sans-serif;
-}
+}*/
 
 
 .HeaderImage h1{
@@ -8,10 +8,10 @@ body{
 	font-size: 40px;
 }
 
-h3 {
+/*h3 {
 	font-size: 30px;
 	text-align: center;
-}
+}*/
 
 .HeaderImage{
 	width: 100%;
@@ -20,7 +20,7 @@ h3 {
 	color: white;
 	text-align: center;
 	line-height: 900px;
-	background-image: url("waasheader.jpg");
+	background-image: url("images/waasheader.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
@@ -40,7 +40,7 @@ h3 {
 }
 
 .Performances p{
-	text-align: center;
+	text-ualign: center;
 }
 
 .Performances{
@@ -53,3 +53,89 @@ h3 {
 .WhoWeAre{
 	height: 500px;
 }
+
+/*html, body, .container-fluid {
+	height: 100%;
+	overflow: hidden;
+}*/
+
+/*.row{
+	height: 100%;
+}*/
+
+
+
+/****** Landing Page *******/
+a {
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+.left-img{
+	background-image: url("images/waasheader.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: -50px -110px;
+	background-attachment: fixed;
+	height: 40vh;
+	/*overflow: auto;*/
+}
+
+.logo {
+	width: 15%;
+	/*height: 20%;*/
+}
+.right-txt{
+	margin-top: 25px;
+	text-align: left;
+	overflow: auto;
+}
+
+.right-txt > h1 {
+	font-size: 55px;
+	padding-left: 20px;
+	/*text-transform: uppercase;*/
+}
+
+.right-txt > p {
+	padding: 25px 20px;
+	text-align: left;
+	line-height: 35px;
+	font-size: 18px;
+
+}
+
+.right-txt .lead{
+	margin-bottom: 0;
+}
+
+.right-txt > ul{
+	/*margin-top: -10px;*/
+	margin: -10px auto;
+	text-align: center;
+}
+
+.right-txt > ul li{
+	/*display: inline-block;*/
+	margin: 15px;
+	font-size: 20px;
+}
+
+.menu-display{
+	font-size: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.menu-display a{
+	color: #800000;
+}
+
+.menu-display a:hover{
+	color: #bf7f7f;
+	text-decoration: none;
+}
+
