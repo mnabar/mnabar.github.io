@@ -2,6 +2,10 @@
 	font-family: "Helvetica", sans-serif;
 }*/
 
+/*body{
+	color: white;
+}
+*/
 
 .HeaderImage h1{
 	color: white;
@@ -78,9 +82,9 @@ a:hover{
 	background-image: url("images/waasheader.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: -50px -110px;
+	/*background-position: -50px -110px;*/
 	background-attachment: fixed;
-	height: 40vh;
+	height: 60vh;
 	/*overflow: auto;*/
 }
 
@@ -94,9 +98,16 @@ a:hover{
 	overflow: auto;
 }
 
+.row {
+	background-color: rgba(0, 0, 0, .8);
+	/*height: 100%;*/
+
+}
+
 .right-txt > h1 {
 	font-size: 55px;
 	padding-left: 20px;
+	color: white;
 	/*text-transform: uppercase;*/
 }
 
@@ -105,6 +116,7 @@ a:hover{
 	text-align: left;
 	line-height: 35px;
 	font-size: 18px;
+	color: rgba(255, 255, 255, 0.8);
 
 }
 
@@ -120,7 +132,7 @@ a:hover{
 
 .right-txt > ul li{
 	/*display: inline-block;*/
-	margin: 15px;
+	margin: 10px;
 	font-size: 20px;
 }
 
