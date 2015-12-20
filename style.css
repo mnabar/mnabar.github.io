@@ -153,3 +153,36 @@ a:hover{
 	text-decoration: none;
 }
 
+/* team members style*/
+
+ul.team-members{
+        list-style:none;
+        font-size: 0px;
+        text-align: center;
+}
+ 
+ul.team-members li{
+        display:inline-block;
+        padding: 10px;
+        font-size: 16px;
+        font-size: 1rem;
+        vertical-align: top;
+}
+ 
+ul.team-members li img{
+        border-radius:100%;
+        max-width: 200px;
+        height: 200px;
+        margin:0 0 10px;
+}
+ 
+ 
+ul.team-members li p{
+        margin: 0 0 5px;
+}
+ 
+ 
+.foo img:nth-child(2){display:none}
+ 
+.foo:hover img:first-child{display:none}
+.foo:hover img:nth-child(2){display:inline-block}
