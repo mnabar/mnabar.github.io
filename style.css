@@ -99,7 +99,7 @@ a:hover{
 }
 
 .row {
-	background-color: rgba(0, 0, 0, .8);
+	background-color: rgba(255, 255, 204, .8);
 	/*height: 100%;*/
 
 }
@@ -107,16 +107,25 @@ a:hover{
 .right-txt > h1 {
 	font-size: 55px;
 	padding-left: 20px;
-	color: white;
+	color: black;
+	text-align: center;
+	/*text-transform: uppercase;*/
+}
+
+.right-txt > h2 {
+	font-size: 55px;
+	padding-left: 20px;
+	color: black;
+	text-align: center;
 	/*text-transform: uppercase;*/
 }
 
 .right-txt > p {
 	padding: 25px 20px;
-	text-align: left;
+	text-align: justify;
 	line-height: 35px;
 	font-size: 18px;
-	color: rgba(255, 255, 255, 0.8);
+	color: black;
 
 }
 
@@ -140,12 +149,13 @@ a:hover{
 	font-size: 10px;
 	margin-top: 10px;
 	margin-bottom: 10px;
+	font-
 	font-family: "Muli", "Helvetica", sans-serif;
 	text-transform: uppercase;
 }
 
 .menu-display a{
-	color: #800000;
+	color: black;
 }
 
 .menu-display a:hover{
