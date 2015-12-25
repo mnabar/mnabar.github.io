@@ -7,9 +7,13 @@
 }
 */
 
-.HeaderImage h1{
-	color: white;
-	font-size: 40px;
+/* =====================================================
+   =            About Page/about_page.html             =
+   ===================================================== */
+
+.header-image.title-text{
+	padding-top: 140px;
+	margin: 0;
 }
 
 /*h3 {
@@ -17,58 +21,39 @@
 	text-align: center;
 }*/
 
-.HeaderImage{
+.header-image{
 	width: 100%;
-	height: 400px;
-	background-color: black;
+	height: 350px;
+	background/*-color: black;
 	color: white;
 	text-align: center;
-	line-height: 900px;
+	line-height*/: 900px;
+	padding: 0;
 	background-image: url("images/overlay.png"), url("images/team_practice.jpg");
 	background-repeat: repeat no-repeat;
-	background-size: cover;
+	background-size: 100%, cover;
 	background-position: center center;
 	/*background-attachment: fixed;*/
+	position: relative;
+
+	top: 0;
 }
 
-
-.WhatWeDo p{
-	font-size: 24px;
-	line-height: 48px;
-}
-
-.WhatWeDo{
-	text-align: center;
-	/*height: 500px;*/
-	padding: 15px 40px;
-}
-
-.Performances p{
-	text-ualign: center;
-}
-
-.Performances{
-	height: 500px;
-}
-.WhoWeAre p{
-	text-align: center;
-}
-
-.WhoWeAre{
-	height: 500px;
-}
-
-/*html, body, .container-fluid {
-	height: 100%;
-	overflow: hidden;
-}*/
-
-/*.row{
-	height: 100%;
-}*/
 
 .container-fluid{
 	padding: 0 !important;
+}
+
+.page-text{
+	margin: 10px;
+	padding: 20px 60px;
+}
+
+.page-text > p {
+	text-align: justify;
+	font-size: 18px;
+	line-height: 40px;
+	margin-bottom: 20px;
 }
 
 
@@ -82,6 +67,7 @@ a {
 a:hover{
 	text-decoration: none;
 }
+
 #outer-background{
 	background-image: url("images/overlay.png"), url("images/waasheader.jpg");
 	background-repeat: repeat, no-repeat;
@@ -97,6 +83,12 @@ a:hover{
 }
 
 .landing-page-text-wrapper{
+	border-top: solid 1.5px rgba(255, 255, 255, .25);
+	border-bottom: solid 1.5px rgba(255, 255, 255, .25);
+	width: 40%;
+}
+
+.title-text{
 	text-align: center;
 	color: #fff;
 	text-shadow: 0 1px 2px rgba(0,0,0,.25);
@@ -104,10 +96,6 @@ a:hover{
 	font-size: 55px;
 	letter-spacing: 2px;
 	font-weight: lighter;
-
-	border-top: solid 1.5px rgba(255, 255, 255, .25);
-	border-bottom: solid 1.5px rgba(255, 255, 255, .25);
-	width: 40%;
 }
 
 .menu-bar > ul {
@@ -133,72 +121,6 @@ a:hover{
 .menu-bar > ul > li > a:hover{
 	color: #bfbfbf;
 }
-
-li a {
-}
-
-/*.logo {
-	width: 15%;
-}
-.right-txt{
-	margin-top: 25px;
-	text-align: left;
-	overflow: auto;
-}
-*/
-.row {
-	background-color: rgba(0, 0, 0, .8);
-}
-
-.right-txt > h1 {
-	font-size: 55px;
-	padding-left: 20px;
-	color: white;
-}
-
-.right-txt > p {
-	padding: 25px 20px;
-	text-align: justify;
-	line-height: 35px;
-	font-size: 18px;
-	color: black;
-
-}
-
-.right-txt .lead{
-	margin-bottom: 0;
-}
-
-.right-txt > ul{
-	margin: -10px auto;
-	text-align: center;
-}
-
-.right-txt > ul li{
-	display: inline-block;
-	margin: 10px;
-	font-size: 20px;
-}
-
-.menu-display{
-	font-size: 10px;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	font-
-	font-family: "Muli", "Helvetica", sans-serif;
-	text-transform: uppercase;
-	font-weight: bold;
-}
-
-.menu-display a{
-	color: black;
-}
-
-.menu-display a:hover{
-	color: #bf7f7f;
-	text-decoration: none;
-}
-
 
 /* =========================================================
    =            Team Members/ members-page.html            =
@@ -237,25 +159,3 @@ ul.team-members li p{
 .foo:hover img:nth-child(2){display:inline-block}
 
 
-
-/* ==================================================
-   =                     Navbar                     =
-   ================================================== */
-
-/*.menu-display a.navbar-text{
-	font-size: 20px !important;
-}
-
-nav.navbar.navbar-right.menu-display{
-	margin-right: 20px;
-}
-
-nav.navbar.navbar-right.menu-display > a{
-	font-size: 14px !important;
-	color: white;
-
-}
-
-.active {
-	color: #800000 !important;
-}*/
