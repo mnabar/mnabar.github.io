@@ -11,24 +11,30 @@
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (min-width : 480px) {
+	ul.team-members li img{
+		max-width: 170px;
+		height: 170px;
+	}
 
+	ul.team-members li{
+		font-size: 20px
+	}
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
+	ul.team-members li img{
+		max-width: 175px;
+		height: 175px;
+	}
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-	/*.left-img {
-		height: 100vh;
-		background-position: -180px -140px;
+	ul.team-members li img{
+		max-width: 200px;
+		height: 200px;
 	}
-
-	.right-txt h1{
-		font-size: 55px;
-	}*/
-
 }
 
 /* Large Devices, Wide Screens */

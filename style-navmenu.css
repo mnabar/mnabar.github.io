@@ -106,14 +106,10 @@
 
 .hamburger {
   background: transparent;
-  /*border: none;*/
-  display: block;
-  height: 32px;
-  /*margin-left: 15px;*/
   margin: 15px 0 0 15px;
-  position: fixed;
-  top: 20px;
-  width: 32px;
+  height: 32px;
+  width: 31px;
+  padding: 0;
   z-index: 999;
 }
 
@@ -140,6 +136,8 @@ button {
 
 .glyphicon{
   position: absolute !important;
+  background-color: rgba(255, 255, 255, .20);
+  border-radius: 3px;
 }
 
 .glyphicon-menu-hamburger,

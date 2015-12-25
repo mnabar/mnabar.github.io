@@ -1,107 +1,128 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="media-style.css">
-	<title>Members - Chicago Raas</title>
+	<title>Team Members</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style-navmenu.css">
+        <link rel="stylesheet" href="media-style.css">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="navbar-function.js"></script>
+
 </head>
 <body>
-	<div class="container-fluid">
-                <nav class="navbar navbar-left menu-display">
-                        <a href="./index.html" class="navbar-brand"> Chicago Raas </a>
-                        <a href="./members-page.html" class="navbar-text active pull-right"> Members </a>
-                        <a href="./contact-us-page.html" class="navbar-text navbar-right"> Contact Us </a>
-                        <a href="./about-page.html" class="navbar-text navbar-right"> About </a>
-
+	<div id="wrapper">
+                <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+                        <ul class="nav sidebar-nav">
+                                <li> <a href="./index.html"> Chicago Raas</a> </li>
+                                <li> <a href="./about-page.html">About</a> </li>
+                                <li class="active-page"> <a href="">Members</a> </li>
+                                <li> <a href="./contact-us-page.html">Contact</a> </li>
+                        </ul>
                 </nav>
-                <div class="MemberImage"> </div>
 
-			<ul class="team-members">
-                                <h1> Meet the Team </h1>
+                <button type="button" class="glyphicon glyphicon-menu-hamburger hamburger is-closed animated fadeInLeft" data-toggle="offcanvas">
+                </button>
 
-                                <h2>Captains<h2>
+                <div id="page-content-wrapper">
+                        <div class="header-image title-text member-image"> Members </div>
+                        <div class="page-text">
+                                <p>
+                                        Auditions are held at the beginning of Fall Quarter and the end of Spring Quarter every year.  Please checkout our <a href="#">Facebook</a> page to keep up to date with audition announcements.
+                                </p>
+
+
+                        </div>
+
+        		<ul class="team-members">
+                                <h2>The Captains</h2>
                                 <li class="foo">
-                                        <img src="images/member photos/captains/alanna.jpg"/>
+                                        <img src="images/member-photos/captains/alanna.jpg"/>
                                         <p> Alanna </p>
                                 </li>
                                 <li class="foo">
-                                        <img src="images/member photos/captains/sarah.jpg"/>
+                                        <img src="images/member-photos/captains/sarah.jpg"/>
                                         <p> Sarah </p>
                                 </li>
                                 <li class="foo">
-                                        <img src="images/member photos/captains/namrata.jpg"/>
+                                        <img src="images/member-photos/captains/namrata.jpg"/>
                                         <p> Namrata </p>
                                 </li>
                                 <li class="foo">
-                                        <img src="images/member photos/captains/kaesha.jpg"/>
+                                        <img src="images/member-photos/captains/kaesha.jpg"/>
                                         <p> Kaesha </p>
                                 </li>
-                        <h2>The Boys<h2>
+
+                                <br>
+                                <h2>The Boys</h2>
                                
                                 <li class="foo">
-                                        <img src="images/member photos/boys/freddy.jpg"/>
+                                        <img src="images/member-photos/boys/freddy.jpg"/>
                                         <p> Freddy </p>
                                 </li>
                                 <li class="foo">
-                                        <img src="images/member photos/boys/sayri.jpg"/>
+                                        <img src="images/member-photos/boys/sayri.jpg"/>
                                         <p> Sayri </p>
                                 </li>
                                 <li class="foo">
-                                        <img src="images/member photos/boys/rohan.jpg"/>
+                                        <img src="images/member-photos/boys/rohan.jpg"/>
                                         <p> Rohan </p>
                                 </li>
                                 <li class="foo">
-                                        <img src="images/member photos/boys/shirley.jpg"/>
+                                        <img src="images/member-photos/boys/shirley.jpg"/>
                                         <p> Shirley </p>
                                 </li>
                                 <li class="foo">
-                                        <img src="images/member photos/boys/ishaan.jpg"/>
+                                        <img src="images/member-photos/boys/ishaan.jpg"/>
                                         <p> Ishaan </p>
                                 </li>
                                 <li class="foo">
-                                        <img src="images/member photos/boys/jason.jpg"/>
+                                        <img src="images/member-photos/boys/jason.jpg"/>
                                         <p> Jason </p>
                                 </li>
                                 <li class="foo">
-                                        <img src="images/member photos/boys/richard.jpg"/>
+                                        <img src="images/member-photos/boys/richard.jpg"/>
                                         <p> Richard </p>
                                 </li>
                                
-                        <h2>The Girls<h2>
+                               <br>
+                                <h2>The Girls</h2>
+
                                 <li class="foo">
-                                        <img src="images/member photos/girls/christina.jpg"/>
+                                        <img src="images/member-photos/girls/christina.jpg"/>
                                         <p> Christina </p>
                                 </li>
                                 <li class="foo">
-                                        <img src="images/member photos/girls/davina.jpg"/>
+                                        <img src="images/member-photos/girls/davina.jpg"/>
                                         <p> Davina </p>
                                 </li>
                                 <li class="foo">
-                                        <img src="images/member photos/girls/mai.jpg"/>
+                                        <img src="images/member-photos/girls/mai.jpg"/>
                                         <p> Mai </p>
                                 </li>
                                 <li class="foo">
-                                        <img src="images/member photos/girls/emily.jpg"/>
+                                        <img src="images/member-photos/girls/emily.jpg"/>
                                         <p> Emily </p>
                                 </li>
                                 <li class="foo">
-                                        <img src="images/member photos/girls/jennifer.jpg"/>
+                                        <img src="images/member-photos/girls/jennifer.jpg"/>
                                         <p> Jennifer </p>
                                 </li>
                                 <li class="foo">
-                                        <img src="images/member photos/girls/meera.jpg"/>
+                                        <img src="images/member-photos/girls/meera.jpg"/>
                                         <p> Meera </p>
                                 </li>
                                 <li class="foo">
-                                        <img src="images/member photos/girls/shruthi.jpg"/>
+                                        <img src="images/member-photos/girls/shruthi.jpg"/>
                                         <p> Shruthi </p>
                                 </li>
                         </ul>
+                </div>
 	</div>
 
 </body>
