@@ -1,4 +1,40 @@
 <?php
+
+
+    if(isset($_POST["submit"])){
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $message = $_POST['message'];
+        $from = 'Chicago Raas Contact Form';
+        $to = 'mai.nabar@gmail.com';
+        $subject = 'Message from Chicago Raas Contact Form'
+
+        $body = "From: $name\n E-mail: $email\n Message:\n $message";
+
+        //Check if all the fields are valid before submitting
+        if(!$_POST['name']){
+            $errName = "Please enter your name";
+        }
+
+        if(!$_POST['email'] || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
+            $errEmail = "Please enter a valid e-mail"
+        }
+
+        if(!$_POST['message']){
+            $errMessage = "Please enter a message";
+        }
+
+        if(!$errName && !$errEmail && !$errMessage){
+            if(mail($to, $subject, $body, $from)){
+                $result = '<div class="alert alert-success">Thank you for your message!</div>';
+            }
+            else{
+                $result = '<div class="alert alert-danger">Sorry, there was an error sending your message. Please try again later.</div>';
+            }
+        }
+    }
+   
+/*
     // My modifications to mailer script from:
     // http://blog.teamtreehouse.com/create-ajax-contact-form
     // Added input sanitizing to prevent injection
@@ -51,5 +87,6 @@
         http_response_code(403);
         echo "There was a problem with your submission, please try again.";
     }
+    */
 
 ?>
