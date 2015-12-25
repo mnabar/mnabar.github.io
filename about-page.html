@@ -1,54 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="media-style.css">
+	<title>About the Team</title>
 
-	<title>Chicago Raas</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="style-navmenu.css">
+	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="navbar-function.js"></script>
 </head>
-<body>
-	<div class="container-fluid">
-		<nav class="navbar navbar-left menu-display">
-			<a href="./index.html" class="navbar-brand"> Chicago Raas </a>
-			<a href="./about-page.html" class="navbar-text active pull-right"> About </a>
-			<a href="./members-page.html" class="navbar-text navbar-right"> Members </a>
-			<a href="./contact-us-page.html" class="navbar-text navbar-right"> Contact Us </a>
 
-		</nav>
-		<div class="HeaderImage">
+	<body>
+		<div id="wrapper">
+		  <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+		    <ul class="nav sidebar-nav">
+		      <li> <a href="./index.html"> Chicago Raas</a> </li>
+		      <li class="active-page"> <a href="">About</a> </li>
+		      <li> <a href="./members-page.html">Members</a> </li>
+		      <li> <a href="./contact-us-page.html">Contact</a> </li>
+		    </ul>
+		  </nav>
+
+		    <button type="button" class="glyphicon glyphicon-menu-hamburger hamburger is-closed animated fadeInLeft" data-toggle="offcanvas">
+		    </button>
+			<div id="page-content-wrapper">
+				<div class="header-image title-text">
+					About
+				</div>
+				
+				<div class="page-text">
+					<p>
+			    		<strong>Chicago Raas </strong> is a competitive Indian dance group at the University of Chicago.  Every year Chicago Raas competes both nationally and intergallactically to wow audiences of all life forms.  
+			    	</p>
+			    	<p>  
+			    		Raas or Dandiya Raas is the traditional folk dance form of Gujarat, India, and is associated with scenes of Holi, and lila of Krishna and Radha at Vrindavan. Along with Garba, it is the featured dance of Navratri evenings in Western India. During Navratri festival, in most of the cities of Gujarat and in Mumbai people gather and perform Garba dance. Raas is also performed at social functions and on stage. 
+			    	</p>
+
+			    	<blockquote>
+			    	  <p>We do da cool thangz with the dandiya and compete in places wow in the winter so cold.</p>
+			    	  <footer> Maitron Nabar, <cite title="Source Title">Head Organizer of Team Shenanigans</cite></footer>
+			    	</blockquote>
+
+				</div>
+			</div>
 		</div>
 
 
-		<div class="WhatWeDo">
-			<h3>~WHAT WE DO~</h3>
-			<p>
-				Raas or Dandiya Raas is the traditional folk dance form of Gujarat, India, and is associated with scenes of Holi, and lila of Krishna and Radha at Vrindavan. Along with Garba, it is the featured dance of Navratri evenings in Western India. During Navratri festival, in most of the cities of Gujarat and in Mumbai people gather and perform Garba dance. Raas is also performed at social functions and on stage. 
-			</p>
-			<p>
-				We do da cool thangz with the dandiya and compete in places wow in the winter so cold. 
-			</p>
-		</div>
-
-		<div class="Performances">
-			<h3>"~WHERE WE BE~"</h3>
-			<p>
-				Check out our past and upcoming performances
-				<a href = "http://image.shutterstock.com/display_pic_with_logo/1323004/121852747/stock-photo-happy-old-man-with-money-on-a-white-background-121852747.jpg" >here!</a>
-			</p>
-		</div>
-
-		<div class="WhoWeAre">
-			<h3>"~WHO WE IZ~"</h3>
-			<p>
-				Who knows
-			</p>
-		</div>
-	</div>
-
-</body>
+	</body>
 </html>
