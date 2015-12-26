@@ -6,7 +6,7 @@ $(document).ready(function() {
 		videoSource: [['videos/raas_website_video.mp4', 'video/mp4'],
 			['videos/raas_website_video.webm', 'video/webm'], 
 			['videos/raas_website_video.ogv', 'video/ogg']], 
-		poster: 'images/waasheader_overlayed.png',
+		poster: 'images/raas_landing_image.png',
 		loop: true,
 		loadedCallback: function() {
 			$(this).videobackground('mute');
