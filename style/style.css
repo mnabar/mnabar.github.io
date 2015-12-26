@@ -1,0 +1,208 @@
+
+
+/*body{
+	color: white;
+}
+*/
+
+
+/* ===========================================================
+   =            Re-used Page Formatting Elements             =
+   =========================================================== */
+
+a {
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+body {
+	font-family: "Helvetica Neue", "Helvetica", sans-serif;
+}
+
+.title-text{
+	text-align: center;
+	color: #fff;
+	text-shadow: 0 1px 2px rgba(0,0,0,.25);
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 55px;
+	letter-spacing: 2px;
+	font-weight: lighter;
+}
+
+.header-image.title-text{
+	padding-top: 140px;
+	margin: 0;
+}
+
+.header-image{
+	width: 100%;
+	height: 350px;
+	padding: 0;
+	background-repeat: repeat no-repeat;
+	background-size: 100%, cover;
+	background-position: center top, center;
+}
+
+.container-fluid{
+	padding: 0 !important;
+}
+
+.page-text{
+	margin: 10px;
+	padding: 15px 20px;
+}
+
+
+/* =====================================================
+   =            About Page/about_page.html             =
+   ===================================================== */
+
+
+.about-image{
+	background-image: url("../images/overlay.png"), url("../images/team_practice.jpg");
+}
+
+
+.page-text > p {
+	text-align: justify;
+	font-size: 14px;
+	line-height: 30px;
+	margin-bottom: 20px;
+}
+
+
+/* ==================================================
+   =            Landing Page/Index.html             =
+   ================================================== */
+
+#outer-background{
+	position: relative;
+	z-index: 1;
+
+	/*background-image: url("images/waasheader_overlayed.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;*/
+
+	height: 100vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#outer-background > .title-text {
+	font-size: 30px;
+}
+
+.landing-page-text-wrapper{
+	border-top: solid 1.5px rgba(255, 255, 255, .25);
+	border-bottom: solid 1.5px rgba(255, 255, 255, .25);
+	width: 70%;
+}
+
+.menu-bar > ul {
+	list-style-type: none;
+	padding: 0;
+}
+.menu-bar > ul > li{
+	display: inline-block;
+	text-align: center;
+	margin: 30px 20px;
+}
+.menu-bar > ul > li > a,
+.menu-bar > ul > li > a:hover{
+	font-size: 14px;
+	text-decoration: none;
+	letter-spacing: 1.4px;
+	font-weight: 400;
+}
+
+.menu-bar > ul > li > a{
+	color: #fff;
+}
+.menu-bar > ul > li > a:hover{
+	color: #bfbfbf;
+}
+
+.video-background {
+   	position: absolute;
+   	top: 0;
+   	left: 0;
+   	overflow: hidden;
+   	width: 100%;
+   	height: 100%;
+   	z-index: 0;
+}
+
+.video-background video {
+   	min-height: 100%; 
+   	min-width:100%; 
+}
+
+/* =========================================================
+   =            Team Members/ members-page.html            =
+   ========================================================= */
+.team-members {
+	padding: 0;
+}
+
+.member-image{
+	background-image: url("../images/overlay.png"), url("../images/member-photos/raas_members.jpg");
+}
+
+.team-members > h2{
+	text-align: center;
+	margin-top: 30px;
+}
+
+ul.team-members{
+    list-style:none;
+    font-size: 0px;
+    text-align: center;
+}
+ 
+ul.team-members li{
+    display:inline-block;
+    padding: 10px;
+    font-size: 14px;
+    vertical-align: top;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+ 
+ul.team-members li img{
+    border-radius: 100%;
+    max-width: 100px;
+    height: 100px;
+    margin:0 0 10px;
+}
+ 
+ 
+ul.team-members li p{
+    margin: 0 0 5px;
+}
+ 
+ 
+/*.foo img:nth-child(2){display:none}
+ 
+.foo:hover img:first-child{display:none}
+.foo:hover img:nth-child(2){display:inline-block}*/
+
+/* =========================================================
+   =            Contact Us/ contact-us-page.html           =
+   ========================================================= */
+
+   .contact-image{
+   		background-image: url("../images/overlay.png"), url("../images/team-photo.jpg");
+   		background-position: 50% 37%;
+   }
+
+
+
+
+   

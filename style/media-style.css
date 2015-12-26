@@ -1,0 +1,66 @@
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+    
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+	ul.team-members li img{
+		max-width: 170px;
+		height: 170px;
+	}
+
+	ul.team-members li{
+		font-size: 20px
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	ul.team-members li img{
+		max-width: 175px;
+		height: 175px;
+	}
+
+	.landing-page-text-wrapper{
+		width: 40%;
+	}
+
+	#outer-background > .title-text {
+		font-size: 55px;
+	}
+
+	.menu-bar > ul > li > a,
+	.menu-bar > ul > li > a:hover{
+		font-size: 18px;
+	}
+
+	.page-text{
+		padding: 20px 60px;
+	}
+
+	.page-text > p {
+		font-size: 18px;
+		line-height: 40px;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	ul.team-members li img{
+		max-width: 200px;
+		height: 200px;
+	}
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
