@@ -137,6 +137,9 @@ body {
    	min-width:100%; 
 }
 
+video {
+	object-fit: cover;
+}
 
 /* =====================================================
    =            About Page/about_page.html             =
