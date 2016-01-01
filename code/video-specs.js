@@ -6,7 +6,7 @@ $(document).ready(function() {
 		videoSource: [['videos/raas_website_video.mp4', 'video/mp4'],
 			['videos/raas_website_video.webm', 'video/webm'], 
 			['videos/raas_website_video.ogv', 'video/ogv']], 
-		poster: 'images/waasheader_overlay.png',
+		poster: 'images/raas_landing_image.png',
 		loop: true,
 		muted: true,
 	});

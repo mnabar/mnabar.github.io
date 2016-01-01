@@ -64,12 +64,13 @@ body {
 	position: relative;
 	z-index: 1;
 
-	/*background-image: url("images/waasheader_overlayed.png");
+	background-image: url("../images/waasheader_overlay.png");
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-attachment: fixed;*/
+	background-attachment: fixed;
 
 	height: 100vh;
+	width: 100%;
 
 	display: flex;
 	display: -webkit-box;
@@ -147,7 +148,8 @@ video {
 
 
 .about-image{
-	background-image: url("../images/overlay.png"), url("../images/team_practice.jpg");
+	background-image: url("../images/overlay.png"), url("../images/about_image.jpg");
+	background-position: 50% 27%;
 }
 
 
@@ -158,6 +160,25 @@ video {
 	margin-bottom: 20px;
 }
 
+.page-text > hr,
+.alumni > hr {
+	width: 60%;
+	margin: 30px auto;
+}
+
+.awards{
+	font-size: 14px;
+}
+
+.awards-div{
+	line-height: 30px;
+}
+
+.awards-div > ul{
+	padding-left: 20px;
+	list-style-type: circle;
+}
+
 /* =========================================================
    =            Team Members/ members-page.html            =
    ========================================================= */
@@ -166,7 +187,8 @@ video {
 }
 
 .member-image{
-	background-image: url("../images/overlay.png"), url("../images/member-photos/raas_members.jpg");
+	background-image: url("../images/overlay.png"), url("../images/team-photo.jpg");
+	background-position: 50% 38%;
 }
 
 .team-members > h2{
@@ -207,12 +229,33 @@ ul.team-members li p{
 .foo:hover img:first-child{display:none}
 .foo:hover img:nth-child(2){display:inline-block}*/
 
+
+.alumni > h2{
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.alumni > ul {
+	-moz-column-count:1;
+	-webkit-column-count:1;
+	column-count:1;
+
+	-moz-column-gap: 10px;
+	-webkit-column-gap: 10px;
+	column-gap: 10px;
+
+	list-style-type: none;
+	text-align: center;
+	padding: 0;
+
+}
+
 /* =========================================================
    =            Contact Us/ contact-us-page.html           =
    ========================================================= */
 
    .contact-image{
-   		background-image: url("../images/overlay.png"), url("../images/team-photo.jpg");
+   		background-image: url("../images/overlay.png"), url("../images/member-photos/raas_members.jpg");
    		background-position: 50% 37%;
    }
  }
