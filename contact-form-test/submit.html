@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Untitled </title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+		<script type="text/javascript" src="app.js"></script>
+	</head>
+	<body>
+		<div id="container">
+			<div id="form-section">
+				<div id="left-submit">
+					<div id="submission">
+						<div class="form-input">
+						    <label for="name" class="form-label">Name:&nbsp;</label>
+						    <input type="text" name="name" id="name" class="form-input-box" required/>
+						</div>
+						<div class="form-input">
+						    <label for="email" class="form-label">Email:&nbsp;</label>
+						    <input type="email" name="email" id="email" class="form-input-box" required/>
+						</div>
+						<div class="form-input">
+						    <label for="subject" class="form-label">Subject:&nbsp;</label>
+						    <input type="text" name="subject" id="subject" class="form-input-box" required/>
+						</div>
+						<div class="form-input">
+						    <label for="message" class="form-label">Message:&nbsp;</label>
+						</div>
+						<div class="form-input">
+							<textarea name="message" id="message" class="form-input-textarea" required></textarea>
+						</div>
+						<input type="submit" id="send" value="Send" class="form-button" disabled/>
+					</div>
+				</div>
+				<!-- DIALOG BOX - pops up upon submission -->
+				<div id="dialog-success" style="display:none">
+					<h1>Sent!</h1>
+					<p>Thank you for contacting us.</p>
+				</div>
+			</div>
+
+		</div>
+	</body>
+</html>
