@@ -2,12 +2,15 @@
     // My modifications to mailer script from:
     // http://blog.teamtreehouse.com/create-ajax-contact-form
     // Added input sanitizing to prevent injection
-
+    include 'ChromePhp.php';
+    ChromePhp::log('Hello console!');
+    ChromePhp::log($_SERVER);
+    // phpinfo();
     // Only process POST reqeusts.
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Get the form fields and remove whitespace.
         $name = strip_tags(trim($_POST["name"]));
-				$name = str_replace(array("\r","\n"),array(" "," "),$name);
+                $name = str_replace(array("\r","\n"),array(" "," "),$name);
         $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
         $message = trim($_POST["message"]);
 
@@ -32,7 +35,8 @@
         $email_content .= "Message:\n$message\n";
 
         // Build the email headers.
-        $email_headers = "From: $name <$email>";
+        $email_headers = "From: RaasWebPage <$recipient>";
+        ChromePhp::log($recipient, $subject, $email_content, $email_headers);
 
         // Send the email.
         if (mail($recipient, $subject, $email_content, $email_headers)) {
@@ -43,7 +47,6 @@
             // Set a 500 (internal server error) response code.
             http_response_code(500);
             echo "Oops! Something went wrong and we couldn't send your message.";
-            echo $email_content;
         }
 
     } else {
