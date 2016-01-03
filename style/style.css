@@ -149,7 +149,8 @@ video {
 
 .about-image{
 	background-image: url("../images/overlay.png"), url("../images/team_practice.jpg");
-	background-position: 50% 27%;
+	/*background-position: 50% 27%;*/
+	background-position: 50% 52%;
 }
 
 
