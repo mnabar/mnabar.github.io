@@ -14,6 +14,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="code/navbar-function.js"></script>
+	<script type="text/javascript" src="code/app.js"></script>
 </head>
 <body>
 	<div id="wrapper">
@@ -35,52 +36,28 @@
 
 				<div class="page-text">
 					<p>
-           	 			Feel free to contact us about any questions, comments, or performance requests.  You can also send us a message and stay up to date on our events through our <a href="https://www.facebook.com/chicagoraas/?ref=ts&fref=ts_" target = "_blank">Facebook</a> page!  
+           	 			Feel free to contact us about any questions, comments, or performance requests.  You can also send us a message and stay up to date on our events through our <a href="https://www.facebook.com/chicagoraas/" target = "_blank">Facebook</a> page!  
            		 	</p>
 
-			<!-- 		<div id="form-messages"></div>
-					<form id="ajax-contact" method="post" action="mailer.php">
+					<form id="contact-form" action="//formspree.io/captains@chicagoraas.com"
+					      method="POST" accept="application/json">
 					  <div class="form-group">
 					    <label for="senderName">Name</label>
-					    <input type="text" class="form-control" id="name" placeholder="Name" required>
+					    <input type="text" class="form-control" name="Name" placeholder="Name" required>
 					  </div>
 
 					  <div class="form-group">
 					    <label for="senderEmail">Email Address</label>
-					    <input type="email" class="form-control" id="email" placeholder="Email" required></input>
+					    <input type="text" class="form-control" name="_replyto" placeholder="Email" required></input>
 					  </div>
 
 					  <div class="form-group">
 					    <label for="senderEmailMessage">Message</label>
-					    <textarea class="form-control" id="message" rows="3" placeholder="Message" required></textarea>
+					    <textarea class="form-control" name="Message" rows="3" placeholder="Message" required></textarea>
 					  </div>
-
-					  <button type="submit" class="btn btn-default">Submit</button>
-					</form> -->
-
-					<div id="form-messages"></div>
-						
-						<form id="ajax-contact" method="post" action="mailer.php">
-							<div class="field">
-								<label for="name">Name:</label>
-								<input type="text" id="name" name="name" required>
-							</div>
-
-							<div class="field">
-								<label for="email">Email:</label>
-								<input type="email" id="email" name="email" required>
-							</div>
-
-							<div class="field">
-								<label for="message">Message:</label>
-								<textarea id="message" name="message" required></textarea>
-							</div>
-
-							<div class="field">
-								<button type="submit">Send</button>
-							</div>
-						</form>
-
+					  <input type="text" name="_gotcha" style="display:none" />
+					  <button class="submit btn btn-default" type="submit" value="Submit">Submit</button>
+					</form>
 
 
 				</div>

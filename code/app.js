@@ -1,51 +1,48 @@
-$(function() {
 
-	// Get the form.
-	var form = $('#ajax-contact');
+$(document).ready(function () {
+	var $contactForm = $('#contact-form');
+	var $sending = '<div class="alert alert-info" role="alert"> Sending message...</div>';
+	
+	var $sent = '<div class="alert alert-success alert-dismissible" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>Message sent.</div>';
+	
+	var $error = '<div class="alert alert-danger alert-dismissible" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button><strong>Uh oh! </strong>  Something went wrong.  Try submitting the form again, or shoot us an email at <a href="mailto:captains@chicagoraas.com?" target="_top">captains@chicagoraas.com</a>.</div>';
 
-	// Get the messages div.
-	var formMessages = $('#form-messages');
-
-	// Set up an event listener for the contact form.
-	$(form).submit(function(e) {
-		// Stop the browser from submitting the form.
+	$contactForm.submit(function(e) {
 		e.preventDefault();
-
-		// Serialize the form data.
-		var formData = $(form).serialize();
-
-		// Submit the form using AJAX.
 		$.ajax({
-			type: 'POST',
-			url: $(form).attr('action'),
-			data: formData
-		})
-		.done(function(response) {
-			// Make sure that the formMessages div has the 'success' class.
-			$(formMessages).removeClass('error');
-			$(formMessages).addClass('success');
+			url: '//formspree.io/captains@chicagoraas.com',
+			method: 'POST',
+			data: $(this).serialize(),
+			dataType: 'json',
+			beforeSend: function() {
+				if($('.alert').length > 0){
+					$contactForm.find('.alert').replaceWith($sending);
+				} else {
+					$contactForm.prepend($sending);
+				}
+			},
+			success: function(data) {
+				
+				if($('.alert').length > 0){
+					$contactForm.find('.alert').replaceWith($sent);
+				} else {
+					$contactForm.prepend($sent);
+				}
 
-			// Set the message text.
-			$(formMessages).text(response);
-
-			// Clear the form.
-			$('#name').val('');
-			$('#email').val('');
-			$('#message').val('');
-		})
-		.fail(function(data) {
-			// Make sure that the formMessages div has the 'error' class.
-			$(formMessages).removeClass('success');
-			$(formMessages).addClass('error');
-
-			// Set the message text.
-			if (data.responseText !== '') {
-				$(formMessages).text(data.responseText);
-			} else {
-				$(formMessages).text('Oops! An error occured and your message could not be sent.');
+				clearForm();
+			},
+			error: function(err) {
+				if($('.alert').length > 0){
+					$contactForm.find('.alert').replaceWith($error);
+				} else {
+					$contactForm.prepend($error);
+				}
 			}
 		});
-
 	});
+
+	function clearForm(){
+		$('.form-control').val('');
+	}
 
 });
