@@ -148,7 +148,7 @@ video {
 
 
 .about-image{
-	background-image: url("../images/overlay.png"), url("../images/about_image.jpg");
+	background-image: url("../images/overlay.png"), url("../images/team_practice.jpg");
 	background-position: 50% 27%;
 }
 
@@ -193,7 +193,7 @@ video {
 
 .team-members > h2{
 	text-align: center;
-	margin-top: 30px;
+	margin-top: 20px;
 }
 
 ul.team-members{
@@ -248,6 +248,7 @@ ul.team-members li p{
 	text-align: center;
 	padding: 0;
 
+	margin-bottom: 30px;
 }
 
 /* =========================================================
